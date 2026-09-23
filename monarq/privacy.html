@@ -83,12 +83,15 @@ MONARQ only writes the wallpaper you chose; it cannot see, read or upload any of
 short rewarded video provided by Google AdMob (Google LLC / Google Ireland Ltd.). There are no banner or pop-up ads.
 To show, measure and prevent fraud in ads, the Google Mobile Ads SDK may process:</p>
 <table>
-  <tr><th>Data</th><th>Purpose</th><th>Linked to you?</th></tr>
-  <tr><td>Device identifiers — the Advertising Identifier (IDFA) <em>only if you allow tracking</em>, and the vendor identifier (IDFV)</td><td>Third-party advertising, frequency capping, fraud prevention</td><td>No</td></tr>
-  <tr><td>Product interaction (ad views, taps, rewards)</td><td>Advertising, analytics</td><td>No</td></tr>
-  <tr><td>Approximate location derived from IP address</td><td>Ad relevance, legal compliance</td><td>No</td></tr>
-  <tr><td>Diagnostics (crash and performance data of the ad SDK)</td><td>Analytics, reliability</td><td>No</td></tr>
+  <tr><th>Data (collected by the Google Mobile Ads SDK)</th><th>Purpose</th><th>Linked to device</th><th>Used for tracking</th></tr>
+  <tr><td>Device identifiers — the Advertising Identifier (IDFA) <em>only if you allow tracking</em>, and the vendor identifier (IDFV)</td><td>Third-party advertising, analytics</td><td>Yes</td><td>Yes, only with your permission</td></tr>
+  <tr><td>Advertising data (ads shown, ad requests)</td><td>Third-party advertising, analytics</td><td>Yes</td><td>Yes, only with your permission</td></tr>
+  <tr><td>Product interaction (ad views, taps, rewards)</td><td>Third-party advertising, analytics</td><td>Yes</td><td>Yes, only with your permission</td></tr>
+  <tr><td>Performance data (e.g. ad load times)</td><td>Third-party advertising, analytics</td><td>Yes</td><td>Yes, only with your permission</td></tr>
+  <tr><td>Approximate location derived from IP address</td><td>Third-party advertising, analytics</td><td>Yes</td><td>No</td></tr>
+  <tr><td>Crash data and other diagnostics of the ad SDK</td><td>App functionality, analytics</td><td>Diagnostics: yes · crash data: no</td><td>No</td></tr>
 </table>
+<p class="muted">"Linked" means Google may associate this data with your device's identifiers; MONARQ itself never receives or stores it, and has no accounts.</p>
 <p>Google processes this data under its own policies:
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a> ·
 <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</p>
